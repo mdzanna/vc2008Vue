@@ -1,18 +1,18 @@
 <template>
   <b-container>
     <b-row>
-      <b-col>
-        <b-form-group label="Select a year">
+      <b-col> <!-- inizio la struttura della pagina-->
+        <b-form-group label="Select a year"> <!-- copiato dalla documentazione -->
           <b-form-checkbox-group
             v-model="year.value"
             :options="year.options"
             name="buttonsYear"
             buttons
-          ></b-form-checkbox-group>
-        </b-form-group>
+          ></b-form-checkbox-group> <!-- il valore di questa riga e di quella sotto dipendono dai valori che ho bisogno di usare -->
+        </b-form-group>  <!-- i valori li creo sotto nella funzione data(), <script> -->
       </b-col>
       <b-col>
-        <b-form-group label="Select a boat type">
+        <b-form-group label="Select a boat type"> <!-- uguale a quello sopra -->
           <b-form-checkbox-group
             v-model="boatType.value"
             :options="boatType.options"
